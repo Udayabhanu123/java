@@ -1,0 +1,36 @@
+import java.util.*;
+class Student
+{
+    int admno=111;
+    String name="sss";
+    void display()
+    {
+         System.out.println("------------------------");
+          System.out.println("Student report");
+           System.out.println("------------------------");
+    }
+}
+class Marks extends Student
+{
+    int mat=76,phy=85,che=67;
+    void show()
+    {
+         System.out.println("Admno="+admno);
+          System.out.println("name="+name);
+           System.out.println("maths="+mat);
+            System.out.println("physics="+phy);
+             System.out.println("chemistry="+che);
+    }
+}
+class Test
+{
+    public static void main(String args[])
+    {
+        Student s1=new Student();
+        s1.display();
+        //s1.show();
+        Marks m1=new Marks();
+        m1.display();
+        m1.show();
+    }
+}
